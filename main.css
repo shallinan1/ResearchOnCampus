@@ -1,6 +1,16 @@
 body {
 	background-color: #d6efff;
 	color: black;
+
+	/* Opacity transition css stuff*/	
+    opacity: 0;
+	-webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
 }
-p {
+
+.load {
+    opacity: 1;
 }

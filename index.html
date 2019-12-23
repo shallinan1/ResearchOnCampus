@@ -16,14 +16,14 @@
 <body>
 
   <!-- School options for user to select !-->
-  <div class="text-center">
-    <h1>Select Campus</h1>
+  <div class="container-md text-center">
+    <h1 class = "display-1 text-center">Select Campus</h1>
     <select id ="school-choice" class="selectpicker">
       <option value = "uw">University of Washington</option>
       <option value = "s1">School 1</option>
       <option value = "s2">School 2</option>
     </select>
-    <a class="btn btn-primary" id = "go-to" role="button">Enter</a>
+    <button class="btn btn-lg btn-primary" id = "go-to" role="button">Enter</button>
   </div>
 
   <!-- Define our event listener to go to URL based on ID of div above !-->
@@ -33,6 +33,12 @@
     // Navigates to page based on element ID from school choice
     function redirect() {
       window.location.href = document.getElementById("school-choice").value.concat("/index.html")
+    }
+  </script>
+
+  <script> 
+    window.onload = function() {
+      document.body.classList.add("load");
     }
   </script>
 
